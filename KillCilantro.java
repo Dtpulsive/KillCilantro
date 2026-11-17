@@ -1,7 +1,7 @@
 public class KillCilantro {
    //cilantro is 8 char
    public static String killCilantro(String words) {
-      String text = "";
+      String text = words;
       String replacement = "parsley";
       String word = "cilantro";
       int index = words.indexOf(word);
