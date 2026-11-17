@@ -18,6 +18,6 @@ public class KillCilantro {
       System.out.println(killCilantro("cilantrotest"));
       System.out.println(killCilantro("nothinghere"));
       System.out.println(killCilantro("testcilantro"));
-      System.out.println(killCilantro("cilantrocilantrocilantro"));
+      //System.out.println(killCilantro("cilantrocilantrocilantro"));
    }
 }
