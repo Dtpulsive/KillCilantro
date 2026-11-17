@@ -1,14 +1,16 @@
 public class KillCilantro {
    //cilantro is 8 char
    public static String killCilantro(String words) {
-      String returnString = "";
-      for (int i = 0; i < words.length(); i++) {
-        if ((i + 8 <= words.length() ) && words.substring(i, i+1) == "cilantro" ) {
-         returnString += words.substring(0, i);
-         returnString += words.substring(i+8);
-        } 
+      String text = "";
+      String replacement = "parsley";
+      String word = "cilantro";
+      int index = words.indexOf(word);
+      
+      while(index != -1) {
+      text = words.substring(0 , index) + replacement +  words.substring(index + word.length());
+      index = text.indexOf(word);
       }
-      return returnString;
+      return text;
      }
    
    public static void main(String[] args) {
